@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>React Placeholder</title>
+		<script src="react/react.js"></script>
+		<script src="react/react-dom.js"></script>
+		<script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			html,
+			body {
+				background: rgb(245, 245, 245);
+				color: rgb(60, 60, 60);
+				font-family: Arial;
+				margin: 0;
+				padding: 0;
+			}
+
+			p {
+				line-height: 1.5;
+			}
+
+			.container {
+				margin: 0 auto;
+				width: 600px;
+			}
+
+			.messages {
+				background: rgb(245, 245, 245);
+				padding: 1em 1em 1em 1em;
+			}
+
+			.message {
+				background: rgb(255, 255, 255);
+				border: 1px solid rgb(200, 200, 200);
+				display: inline-block;
+				margin: 0 0 1em 0;
+				padding: 1em 1em 1em 1em;
+				width: 100%;
+			}
+
+			.message-title,
+			.message-date {
+				float: left;
+				margin: 0;
+				padding: 0;
+			}
+
+			.message-title {
+				width: 85%;
+			}
+
+			.message-date {
+				font-style: italic;
+				margin: 0 0 0 2%;
+				width: 13%;
+			}
+
+			.placeholder .message-title,
+			.placeholder .message-date {
+				animation: pulse 1s infinite;
+				min-height: 1em;
+				text-indent: -99999px;
+			}
+
+			@keyframes pulse {
+				0% {
+					background-color: rgb(235, 235, 235);
+				}
+				50% {
+					background-color: rgb(245, 245, 245);
+				}
+				100% {
+					background-color: rgb(235, 235, 235);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script type="text/babel" src="components/index.js"></script>
+	</body>
+</html>

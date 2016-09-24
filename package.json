@@ -1,0 +1,19 @@
+{
+  "name": "react-placeholder",
+  "version": "0.1.0",
+  "description": "A demo of a react placeholder content animation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewroach/react-placeholder.git"
+  },
+  "author": "Matthew Roach",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewroach/react-placeholder/issues"
+  },
+  "homepage": "https://github.com/matthewroach/react-placeholder#readme"
+}
